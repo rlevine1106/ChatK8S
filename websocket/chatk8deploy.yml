@@ -16,6 +16,6 @@ spec:
     spec: 
       containers:
       - name: chatk8s
-        image: chatk8simage
+        image: sremdocker/chatk8simage
         ports:
         - containerPort: 7070
