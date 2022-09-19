@@ -16,5 +16,7 @@ Kubernetes service to save and deliver messages from a postgres database
 
 * ```CREATE DATABASE messages;```
 * ```CREATE TABLE user_messages (dte DATE PRIMARY KEY NOT NULL, usr TEXT NOT NULL, msg TEXT NOT NULL);```
+
 Verify table was created by running:
-```\d```
+* ```\d```
+
