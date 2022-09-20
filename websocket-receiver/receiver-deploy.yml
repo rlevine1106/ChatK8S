@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: websocket-receiver
+  labels: 
+    app: websocket-receiver
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: websocket-receiver
+  template: 
+    metadata:
+      labels: 
+        app: websocket-receiver
+    spec: 
+      containers:
+      - name: websocket-receiver
+        image: rlevine1440/websocket-receiver
+        ports:
+        - containerPort: 8091

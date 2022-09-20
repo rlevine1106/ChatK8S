@@ -1,16 +1,16 @@
-# websocket-sender
+# websocket-sender-service
 
 ## Building
 
 ```
 $ mvn clean install
-$ docker build -t <<docker id>>/websocket-sender .
-$ docker push <<docker id>>/websocket-sender
+$ kubectl apply -f sender-deploy.yml
+$ kubectl apply -f sender-service.yml
 ```
 
 ## Running locally
 
-docker run -d -p 8090:8090 -t <<docker id>>/websocket-sender
+$ minikube service websocket-receiver-service
 
 ### Misc
 

@@ -4,13 +4,13 @@
 
 ```
 $ mvn clean install
-$ docker build -t <<docker id>>/websocket-receiver .
-$ docker push <<docker id>>/websocket-receiver
+$ kubectl apply -f receiver-deploy.yml
+$ kubectl apply -f receiver-service.yml
 ```
 
 ## Running locally
 
-docker run -d -p 8091:8091 -t <<docker id>>/websocket-receiver
+$ minikube service websocket-receiver-service
 
 ### Misc 
 
