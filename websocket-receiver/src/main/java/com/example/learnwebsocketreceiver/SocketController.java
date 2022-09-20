@@ -19,7 +19,7 @@ public class SocketController {
     @MessageMapping("/hello")
     @SendTo("/topic/messages")
     public String sendMessage(@RequestBody String message) {
-        log.info("Submitted: " + message);
+        //log.info("Submitted: " + message);
         return "Submitted message: " + message;
     }
 

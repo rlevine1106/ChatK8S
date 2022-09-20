@@ -15,7 +15,7 @@ public class SendMessageController {
 
     @PostMapping("/submit")
     public void submitMessage(@RequestBody String message) {
-        log.debug("Sending message: " + message);
+        //log.debug("Sending message: " + message);
 
         RestTemplate restTemplate = new RestTemplate();
         String url = "http://localhost:8091/submit";

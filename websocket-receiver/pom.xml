@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>learn-websocket-receiver</artifactId>
+	<artifactId>websocket-receiver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>learn-websocket-receiver</name>
 	<description>Demo project for Spring Boot</description>
