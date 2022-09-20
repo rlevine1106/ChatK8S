@@ -1,4 +1,19 @@
-# learn-websocket-receiver
+# websocket-receiver
+
+
+## Building
+
+```
+$ mvn clean install
+$ docker build -t <<docker id>>/websocket-receiver .
+$ docker push <<docker id>>/websocket-receiver
+```
+
+## Running locally
+
+docker run -d -p 8091:8091 -t <<docker id>>/websocket-sender
+
+### Misc 
 
 Open web: http://localhost:8091/
 

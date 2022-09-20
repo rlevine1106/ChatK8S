@@ -1,4 +1,18 @@
-# learn-websocket-sender
+# websocket-sender
+
+## Building
+
+```
+$ mvn clean install
+$ docker build -t <<docker id>>/websocket-sender .
+$ docker push <<docker id>>/websocket-sender
+```
+
+## Running locally
+
+docker run -d -p 8090:8090 -t <<docker id>>/websocket-sender
+
+### Misc
 
 Open web: http://localhost:8091/
 
