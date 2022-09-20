@@ -6,11 +6,16 @@ Kubernetes service to save and deliver messages from a postgres database
 
 ## Setup postgres database
 
-* kubectl apply -f postgres-secrets.yml
-* kubectl apply -f postgres-volume.yml
-* kubectl apply -f postgres-claim.yml
-* kubectl apply -f postgres-service.yml
-* kubectl apply -f postgres-deployment.yml
+* ```kubectl apply -f postgres-secrets.yml```
+* ```kubectl apply -f pv-volume.yml```
+* ```kubectl apply -f pv-claim.yml```
+* ```kubectl apply -f postgres-service.yml```
+* ```kubectl apply -f postgres-deployment.yml```
+
+## Start postgres command prompt
+
+* ```kubectl get pods```
+* ```winpty kubectl exec -it pod-name -- psql -U postgres```
 
 ## Create messages database
 
