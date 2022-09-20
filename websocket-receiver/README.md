@@ -1,6 +1,5 @@
 # websocket-receiver
 
-
 ## Building
 
 ```
@@ -11,7 +10,7 @@ $ docker push <<docker id>>/websocket-receiver
 
 ## Running locally
 
-docker run -d -p 8091:8091 -t <<docker id>>/websocket-sender
+docker run -d -p 8091:8091 -t <<docker id>>/websocket-receiver
 
 ### Misc 
 
