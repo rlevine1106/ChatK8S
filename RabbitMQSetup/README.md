@@ -4,8 +4,6 @@
 
 ```
 $ kubectl apply -f "https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml"
-$ kubectl apply -f receiver-deploy.yml
-$ kubectl apply -f receiver-service.yml
 ```
 
 ## Deploy Rabbit MQ with your app specific settings
