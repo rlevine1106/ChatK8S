@@ -9,8 +9,8 @@ $ kubectl apply -f "https://github.com/rabbitmq/cluster-operator/releases/latest
 ## Deploy Rabbit MQ with your app specific settings
 
 ```
-$ kubectl apply -f rabbitmq.yml
-$ kubectl apply -f allow-rabbitmq-traffic.yml
+$ kubectl apply -f rabbitmq.yaml
+$ kubectl apply -f allow-rabbitmq-traffic.yaml
 ```
 
 ### quick start guide 
