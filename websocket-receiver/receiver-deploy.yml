@@ -16,6 +16,6 @@ spec:
     spec: 
       containers:
       - name: websocket-receiver
-        image: rlevine1440/websocket-receiver
+        image: rlevine1440/websocket-receiver:rabbitmq
         ports:
         - containerPort: 8091
