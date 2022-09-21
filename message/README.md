@@ -26,7 +26,6 @@ winpty kubectl exec -it ${POD_NAME} -- psql -U postgres
 ## Create messages database
 
 ```
-CREATE DATABASE messages;
 CREATE TABLE user_messages (dte DATE PRIMARY KEY NOT NULL, usr TEXT NOT NULL, msg TEXT NOT NULL);
 ```
 
