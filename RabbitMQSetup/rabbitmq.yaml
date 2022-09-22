@@ -3,7 +3,7 @@ kind: RabbitmqCluster
 metadata:
   name: stomp-messagebroker
 spec:
-  image: rabbitmq:3.9.7-management
+  image: rabbitmq:3.9.9-management
   replicas: 1
   rabbitmq:
     additionalPlugins:
