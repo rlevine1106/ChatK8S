@@ -98,8 +98,6 @@
             <version>23.0.0</version>
             <scope>compile</scope>
         </dependency>
-
-		
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator-core</artifactId>

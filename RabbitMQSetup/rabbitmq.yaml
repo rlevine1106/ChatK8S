@@ -9,6 +9,3 @@ spec:
     additionalPlugins:
       - rabbitmq_stomp
       - rabbitmq_web_stomp
-    additionalConfig: |
-      default_user=messagebroker
-      default_pass=messagebroker
