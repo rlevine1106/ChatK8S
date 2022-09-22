@@ -23,11 +23,11 @@ export POD_NAME=`kubectl get pods | grep post | awk '{ printf $1 }'`
 winpty kubectl exec -it ${POD_NAME} -- psql -U postgres
 ```
 
-## Create messages database
+## Create table
 
 ```
-CREATE DATABASE messages;
-CREATE TABLE user_messages (dte DATE PRIMARY KEY NOT NULL, usr TEXT NOT NULL, msg TEXT NOT NULL);
+DROP TABLE user_messages;
+CREATE TABLE user_messages (dte TIMESTAMP PRIMARY KEY NOT NULL, usr TEXT NOT NULL, msg TEXT NOT NULL);
 ```
 
 Verify table was created by running:
