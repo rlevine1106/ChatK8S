@@ -40,3 +40,7 @@ Verify table was created by running:
 postgres=# \d
 postgres=# exit
 ```
+
+## Gotcha
+
+* postgres url inside the container is **_jdbc:postgresql://postgres:5432/postgres_**
