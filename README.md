@@ -27,3 +27,9 @@
 ```
 $ minikube service websocket-receiver-service
 ```
+
+## Collaborators
+* Robin Levine
+* Alison Longfellow
+* Sremadan Guddati
+* Uriel Romero
