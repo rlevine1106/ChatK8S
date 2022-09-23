@@ -1,4 +1,4 @@
-# websocket-receiver
+# Websocket
 
 ## Building
 
