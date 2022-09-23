@@ -19,3 +19,9 @@ spec:
         image: rlevine1440/websocket-sender
         ports:
         - containerPort: 8090
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8090
+          initialDelaySeconds: 180
+          periodSeconds: 10
