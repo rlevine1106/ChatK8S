@@ -19,6 +19,12 @@ spec:
         image: rlevine1440/websocket-receiver
         ports:
         - containerPort: 8091
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8091
+          initialDelaySeconds: 180
+          periodSeconds: 10
         env:
           - name: RABBITMQ_HOST
             valueFrom: 
