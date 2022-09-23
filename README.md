@@ -7,7 +7,7 @@
 
 [<img src="Infrastructure.png" width="50%"/>](Infrastructure.png)
 
-## Prerequisites
+## TechStack
 * [Docker](https://docs.docker.com/desktop/install/windows-install/)
 * [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 * [kubectl](https://kubernetes.io/docs/tasks/tools/)
