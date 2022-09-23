@@ -29,3 +29,6 @@ hs_err_pid*
 .project
 .classpath
 .factorypath
+
+Research/KubeMQdemo/target/
+Research/websocket/target/
