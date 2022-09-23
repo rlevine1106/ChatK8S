@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.learnwebsocketreceiver.domain.ChatRequest;
+
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -30,11 +32,12 @@ public class SocketController {
     
     @MessageMapping("/hello")
     @SendTo("/topic/messages")
-    public String sendMessage(@RequestBody String message) {
-		logger.info("Submitted: " + message);
-    	insertUserMessage(message);
+    public String sendMessage(@RequestBody ChatRequest request) {
     	
-        return "Submitted message: " + message;
+    	logger.info("Submitted: " + request.getMessage() + " By User: "+ request.getChatUser());
+    	insertUserMessage(request.getMessage(), request.getChatUser());
+    	
+        return "Submitted message: " + request.getMessage();
     }
 
     @PostMapping("/submit")
@@ -42,11 +45,11 @@ public class SocketController {
         this.simpMessagingTemplate.convertAndSend("/topic/messages", "Received message: " + message);
     }
     
-    private void insertUserMessage(String message) {   	
+    private void insertUserMessage(String message, String userName) {   	
     	Timestamp timestamp = new Timestamp(Calendar.getInstance().getTime().getTime());
    	
     	// @TODO figure out how to get the user
-    	String sql = "INSERT INTO user_messages (dte, usr, msg) VALUES('" + timestamp + "','some user','" + message + "')";
+    	String sql = "INSERT INTO user_messages (dte, usr, msg) VALUES('" + timestamp + "','"+userName+"','" + message + "')";
     	int rows = jdbcTemplate.update (sql);
     	logger.info("Inserted " + rows + " row");
     }

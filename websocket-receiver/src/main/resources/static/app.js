@@ -5,9 +5,11 @@ function setConnected(connected) {
     $("#disconnect").prop("disabled", !connected);
     if (connected) {
         $("#conversation").show();
+        $("#username").prop( "disabled", true );
     }
     else {
         $("#conversation").hide();
+        $("#username").prop( "disabled", false );
     }
     $("#messages").html("");
 }
@@ -34,7 +36,11 @@ function disconnect() {
 }
 
 function sendName() {
-    stompClient.send("/app/hello", {}, $("#name").val());
+	var chatRequest = {
+            chatUser: $("#username").val(),
+            message: $("#name").val()
+        };
+    stompClient.send("/app/hello", {}, JSON.stringify(chatRequest));
 }
 
 function showMessage(message) {
