@@ -1,3 +1,4 @@
+# Logging
 
 ## Setup Logs with Grafana/Loki
 
