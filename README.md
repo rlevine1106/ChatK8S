@@ -20,8 +20,7 @@
 * [Postgres](./message/README.md)
 * [RabbitMQ](./RabbitMQSetup/README.md)
 * [Logging](./grafana/README.md)
-* [websocket-sender](./websocket-sender/README.md)
-* [websocket-receiver](./websocket-receiver/README.md)
+* [Websocket](./websocket-receiver/README.md)
 
 ## How to run
 
