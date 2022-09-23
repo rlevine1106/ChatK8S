@@ -33,3 +33,13 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: postgres-pv-storage
+          readinessProbe:
+            exec:
+              command: ["psql", "-w", "-U", "postgres", "-d", "postgres", "-c", "SELECT 1"]
+            initialDelaySeconds: 15
+            timeoutSeconds: 2
+          livenessProbe:
+            exec:
+              command: ["psql", "-w", "-U", "postgres", "-d", "postgres", "-c", "SELECT 1"]
+            initialDelaySeconds: 45
+            timeoutSeconds: 2    
