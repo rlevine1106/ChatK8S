@@ -8,12 +8,12 @@
 [<img src="Infrastructure.png" width="50%"/>](Infrastructure.png)
 
 ## Prerequisites
-* Docker
-* Minikube
-* kubectl
-* helm
-* java jdk 11 
-* maven
+* [Docker](https://docs.docker.com/desktop/install/windows-install/)
+* [Minikube](https://minikube.sigs.k8s.io/docs/start/)
+* [kubectl](https://kubernetes.io/docs/tasks/tools/)
+* [helm](https://helm.sh/docs/intro/quickstart/)
+* [java jdk 11](https://www.azul.com/downloads/?package=jdk#download-openjdk)
+* [maven](https://maven.apache.org/download.cgi)
 
 ## Installation
 
