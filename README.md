@@ -3,9 +3,15 @@
 ## Overview
 * [Assignment](./Exercise.md)
 
+## Infrastructure Diagram
+
+[<img src="Infrastructure.png" width="50%"/>](Infrastructure.png)
+
 ## Prerequisites
 * Docker
 * Minikube
+* kubectl
+* helm
 * java jdk 11 
 * maven
 
